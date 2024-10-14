@@ -1,0 +1,11 @@
+model: RADIMAGENET_1_SLICE
+dataset: PRIVATE_1_SLICE
+train_portion: 0.6
+num_classes: 3
+
+hparams:
+  lr: 0.0001
+  batch_size: 16
+  weight_decay: 0.00000001
+  epochs: 200
+  train_pretrained_weight: 0.1
