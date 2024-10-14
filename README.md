@@ -9,27 +9,22 @@ This project's primary goal is to harness the power of PET and multi-parametric 
 We have exclusive access to a new dataset containing PSMA-11 PET/MRI scans, tumor segmentation maps, and detailed pathological information. Moreover, supplementary public data can be accessed through the PI-CAI Challenge.
 
 ## Setup
-### 1. Connect to ADLM ssh server
-```
-ssh <username>@131.159.110.3
-```
-
-### 2. Clone this repository
+### 1. Clone this repository
 ```
 git clone https://gitlab.lrz.de/FloWeiser/prostate-cancer-aggressiveness-prediction.git
 ```
 
-### 3. Change into repository directory
+### 2. Change into repository directory
 ```
 cd prostate-cancer-aggressiveness-prediction/
 ```
 
-### 4. Create a symbolic link for the datasets
+### 3. Create a symbolic link for the datasets
 ```
 ln -s /local_ssd/practical_wise24/prostate_cancer data
 ```
 
-### 5. Create and activate conda environment
+### 4. Create and activate conda environment
 
 The project contains two environment yml files in order to create two different conda environments. One environment keeps the dependencies for the training pipeline and notebooks. The second one is used for both training and inference of NNUNet model for segmentation masks
 
@@ -40,9 +35,9 @@ conda env create -f ./segmentation_env.yml
 conda activate ProstateCancer
 ```
 
-### 6. Login to Weights & Biases
+### 5. Login to Weights & Biases
 
-### 7. Start training on GPU
+### 6. Start training on GPU
 ```
 cd src
 conda deactivate ProstateCancer
