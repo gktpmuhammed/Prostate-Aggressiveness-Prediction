@@ -11,7 +11,7 @@ We have exclusive access to a new dataset containing PSMA-11 PET/MRI scans, tumo
 ## Setup
 ### 1. Clone this repository
 ```
-git clone https://gitlab.lrz.de/FloWeiser/prostate-cancer-aggressiveness-prediction.git
+git clone https://github.com/gktpmuhammed/Prostate-Aggressiveness-Prediction.git
 ```
 
 ### 2. Change into repository directory
